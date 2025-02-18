@@ -38,5 +38,36 @@ echo "\n";
 
 // menghitung jumlah data di Array
 var_dump(count($hewan));
-?>
 
+// membuat map
+// ini seperti key value map, maka key tidak bole sama. 
+$anita = array(
+    "nama" => "Anita",
+    "umur" => 22,
+    "status" => "mahasiswa"
+);
+var_dump($anita);
+
+// ngambil datanya sudah tidak pakai int lagi tapi menggunakan key "string"
+var_dump($anita["nama"]);
+
+// pakai kurung kotak juga bisa
+$rahmawati = [
+    "nama" => "rahmawati",
+    "umur" => 22,
+    "status" => "hanya Allah yang tahu"
+];
+var_dump($rahmawati);
+
+// Array didalam Array
+$unwaha = [
+    "universitas" => "UNWAHA",
+    "alamat" => [
+        "kampus1" => "Jombang",
+        "kampus2" => "Jakarta"
+    ]
+];
+// cara ambil data array di dalam array
+var_dump($unwaha["alamat"]["kampus2"]);
+
+var_dump(count($unwaha));
